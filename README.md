@@ -3,7 +3,7 @@
 # Overview:
 
 The main objective of the project is to produce music using quantum concepts to create different
-musical notes.
+musical notes and to mimic the music composer.
 
 # Tools Used: 
 
