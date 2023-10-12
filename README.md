@@ -2,29 +2,31 @@
 
 # Overview:
 
-The project is called Quantum Orchestra, the main objective of the project is 
-to produce music using quantum and implement quantum concepts to create different
+The main objective of the project is to produce music using quantum concepts to create different
 musical notes.
 
 # Tools Used: 
 
-The libraries that we needed were Pygame, which made us able to play the sounds of the notes, and we used flask, to be able to inject the frontend (html, css) code to the 
-original backend code.
+Libraries and Frameworks: 
+Qiskit, Pygame, Threading, Flask.
+
+Programming Languages:
+Python, CSS, html.
 
 # Logic Explained:
 
 At first, we linked each gate to a note and created a list of each Quibit to fill it with the gates based on the algorithm being played.
 
-We have created a function that checks the index and links each index to a qubit list.
+We have created a function that checks the index and links it to a qubit list.
 
 We have tested our logic by implementing two algorithms, the Deutsch–Jozsa algorithm and the Superdense algorithm, each algorithm introduces a special case.
 
-In Deutsch–Jozsa algorithm, we have the phase kickback special case which we presented as the Z note, which is linked to the Z gate, which makes us hear it in a unique way.
+In Deutsch–Jozsa algorithm, we have the phase kickback special case which mimics the z gate, and having a couple of phase kickbacks made us hear the note in a unique way.
 
-In the Superdense algorithm, we have the bell states which are the entangled states, in entanglement the qubits affect each other which is why we hear a duplication of notes, in addition to that, the entanglement gets a unique note that will continue playing till the disentanglement happens,  and this could happen because of the implementation of the threading library, which can run two notes concurrently.
+In the Superdense algorithm, we have the bell states which are the entangled states, in the entanglement the qubits affect each other which is why we hear a duplication of notes, in addition to that, the entanglement have a unique note that will continue playing till the disentanglement happens,  and this could happen because of the implementation of the threading library, which is why we can run two notes concurrently.
 
-It is important to mention that we have applied a block of code for the transpose, to make the reading vertical and not horizontal just like the music theory, and also we have imported threading library which makes us able to run audio concurrently.
+It is important to mention that we have applied a block of code for the transpose, to make the reading vertical and not horizontal just like the music theory.
 
-We printed the gates along with the Qubits it's linked to, to prove that it is being inserted into each list and being played as well.
+We printed the qubits with the gates associated with it, to ensure that each gate is being inserted into each list and being played as well.
 
-We have created a function to play the algorithm, which indicates the period of time between a note and another, which makes the overall symphony either short or long.
+We have created a function to play the algorithm, which also indicates the period of time between each note and another, to make the overall symphony either short or long.
