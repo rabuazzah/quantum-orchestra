@@ -1,9 +1,5 @@
 # quantum-orchestra
 
-####Description of the code of the project
-
-Quantum Orchestra
-
 Overview:
 
 The project is called Quantum Orchestra, the main objective of the project is 
